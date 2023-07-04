@@ -1,0 +1,31 @@
+{
+  "name": "hobby-gsm",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "clarifai": "^2.9.1",
+    "deepai": "^1.0.21",
+    "express": "^4.18.2",
+    "firebase": "^9.22.0",
+    "nodemailer": "^6.9.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.11.2",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.2.0"
+  }
+}

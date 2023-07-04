@@ -1,0 +1,29 @@
+.footer {
+  background-color: #212529;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: -1rem;
+}
+@media (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.footer__items {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+.footer__item-link {
+  color: #e9ecef;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.15s all ease-in-out;
+}
+.footer__item-link:hover {
+  color: #e4a660;
+}
+.footer__title {
+  color: #e9ecef;
+}

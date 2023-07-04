@@ -1,0 +1,139 @@
+@import 'variables.scss';
+
+::-ms-clear {
+    display: none;
+}
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+
+.search-bar {
+    &__dropdown {
+        position: absolute;
+        background: $gray-200;
+        border: 1px solid $gray-200;
+        width: 100%;
+        
+        margin-top: .1rem;
+        border-radius: $border-radius;
+        padding: .5rem;
+        z-index: $z-index-first-level;
+
+        &-item {
+            display: flex;
+            text-decoration: none;
+            color: $gray-800;
+            margin-bottom: 1rem;
+        }
+
+        &-image {
+            margin-right: 1rem;
+        }
+    }
+
+    &__mobile-container {
+        position: relative;
+    }
+
+    &__desktop-container {
+        position: relative;
+        width: 100%;
+
+        & input {
+            width: 100%;
+            border-radius: 25px;
+            height: 2.5rem;
+            padding-left: 1rem;
+            padding-right: 3rem;
+        }
+    }
+
+    &__desktop-form {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background: $primary;
+            border-radius: 50%;
+            height: 2.5rem;
+            width: 2.5rem;
+            right: 0;
+            top: 0;
+
+            & svg {
+                fill: $white;
+            }
+        }
+    }
+
+    &__submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: $primary;
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        right: 0;
+        top: 0;
+        transform: translateX(-50%);
+
+        & svg {
+            fill: $white;
+        }
+    }
+
+    &__close-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        width: 90%;
+        border-radius: 25px;
+        height: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 3rem;
+        border: 1px solid $gray-500;
+
+        &:focus {
+            border-color: $gray-800;
+            border-width: 1px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+        }
+    }
+
+    &__mobile {
+        display: flex!important;
+        flex-direction: row!important;
+        height: 5rem!important;
+    }
+}

@@ -1,0 +1,140 @@
+@import 'variables.scss';
+
+.cart {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+    }
+
+    &__subtotal {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+
+        background-color: $gray-200;
+        width: 100%;
+
+        padding: 1rem;
+        border-radius: 10px;
+        margin-right: 1rem;
+
+        
+    }
+
+    &__products {
+        margin: 1rem;
+        max-width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 75%;
+        }
+    }
+}
+
+.cart-subtotal {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > span {
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+
+        &--subtotal {
+            color: $gray-600;
+            margin-bottom: .5rem;
+        }
+
+        &--delivery-cost {
+            color: $gray-600;
+        }
+
+        &--total {
+            margin-top: 1rem;
+            border-top: 1px solid $gray-500;
+            
+            & span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.cart-listing {
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid $gray-300;
+    padding: 1rem;
+
+    &__quantity {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        border-color: $primary;
+        background-color: $white;
+        font-weight: 700;
+        transition: $transition;
+
+        &:hover {
+            background-color: $gray-200;
+        }
+
+        &--increment,
+        &--decrement {
+            & span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    & tr {
+        border-bottom: 1px solid $gray-400;
+    }
+
+    & th, & td {
+        padding: 1rem;
+    }
+
+    &__item {
+        &--quantity {
+            & span {
+                margin: 0 .5rem;
+            }
+        }
+
+        &--heading {
+            &:first-child {
+                width: 50%;
+            }
+        }
+
+        &--name-wrapper {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        &--details-wrapper {
+            display: flex;
+
+            & > * + * {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

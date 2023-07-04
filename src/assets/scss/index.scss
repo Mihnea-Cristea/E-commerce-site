@@ -1,0 +1,60 @@
+@import 'variables.scss';
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-container {
+    background-color: $container-bg-color;
+    min-height: 100vh;
+}
+
+.banner-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image-tbd {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__description {
+        font-size: 1rem!important;
+        text-transform: uppercase;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        width: 40%;
+        min-width: 300px;
+        height: 300px;
+        background-color: $gray;
+        border-radius: 10%;
+        & > img {
+            max-height: 100px;
+            max-width: 100px;
+            aspect-ratio: 1/1;
+        }
+
+        & > p {
+            font-size: 2rem;
+            font-weight: 600;
+            color: $white;
+            text-align: center;
+        }
+    }
+}

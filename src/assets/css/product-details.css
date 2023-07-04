@@ -1,0 +1,109 @@
+.product-details__data-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.product-details__data > * + * {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.product-details__data--price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #dd8e34;
+}
+.product-details__data--category, .product-details__data--subcategory {
+  color: #787878;
+  text-decoration: none;
+}
+.product-details__data--phone {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+}
+.product-details__data--stock {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #32CD32;
+}
+.product-details__add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dd8e34;
+  border-color: #dd8e34;
+  color: #FFF;
+  width: 100%;
+  padding: 0.25rem 0;
+  border-radius: 10px;
+  transition: 0.15s all ease-in-out;
+}
+.product-details__add-to-cart:hover {
+  background-color: #e4a660;
+  border-color: #e4a660;
+}
+.product-details__add-to-cart svg {
+  fill: #FFF;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+.product-details__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .product-details__container {
+    flex-direction: row;
+  }
+}
+.product-details__images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .product-details__images {
+    width: 50%;
+  }
+}
+.product-details__image--main {
+  width: 70%;
+  padding: 1rem;
+}
+.product-details__image--secondary {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.product-details__image--secondary-image {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.15s ease-in-out;
+}
+.product-details__image--secondary-image.selected {
+  border-color: #6c757d;
+}
+.product-details__summary {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.product-details__summary > * + * {
+  margin-top: 0.5rem;
+}
+@media (min-width: 992px) {
+  .product-details__summary {
+    width: 50%;
+  }
+  .product-details__summary > * + * {
+    margin-top: 1rem;
+  }
+}

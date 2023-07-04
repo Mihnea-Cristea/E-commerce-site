@@ -1,0 +1,29 @@
+// @import "./../../node_modules/bootstrap/scss/variables.scss";
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+
+// svg
+$svg-height: 1.5rem;
+
+// colors
+$primary: #dd8e34;
+$secondary: yellow;
+$white: #FFF;
+$black: #000;
+$gray: #787878;
+$green: #32CD32;
+
+// variable colors
+$text-general-color: #000000;
+$container-bg-color: #ffffffc7;
+
+// borders
+$border-radius: 10px;
+ 
+// transitions
+$transition: .15s all ease-in-out;
+
+// z-index
+$z-index-first-level: 1;

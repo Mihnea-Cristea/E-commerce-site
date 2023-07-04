@@ -1,0 +1,106 @@
+.cart__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .cart__container {
+    flex-direction: row;
+  }
+}
+.cart__subtotal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  background-color: #e9ecef;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+.cart__products {
+  margin: 1rem;
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .cart__products {
+    max-width: 75%;
+  }
+}
+
+.cart-subtotal__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-subtotal__item > span {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.cart-subtotal__item--subtotal {
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+.cart-subtotal__item--delivery-cost {
+  color: #6c757d;
+}
+.cart-subtotal__item--total {
+  margin-top: 1rem;
+  border-top: 1px solid #adb5bd;
+}
+.cart-subtotal__item--total span {
+  font-weight: 600;
+}
+
+.cart-listing {
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+}
+.cart-listing__quantity {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  border-color: #dd8e34;
+  background-color: #FFF;
+  font-weight: 700;
+  transition: 0.15s all ease-in-out;
+}
+.cart-listing__quantity:hover {
+  background-color: #e9ecef;
+}
+.cart-listing__quantity--increment span, .cart-listing__quantity--decrement span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-listing tr {
+  border-bottom: 1px solid #ced4da;
+}
+.cart-listing th, .cart-listing td {
+  padding: 1rem;
+}
+.cart-listing__item--quantity span {
+  margin: 0 0.5rem;
+}
+.cart-listing__item--heading:first-child {
+  width: 50%;
+}
+.cart-listing__item--name-wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.cart-listing__item--details-wrapper {
+  display: flex;
+}
+.cart-listing__item--details-wrapper > * + * {
+  margin-left: 1rem;
+}
